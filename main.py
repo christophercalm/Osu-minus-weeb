@@ -102,7 +102,6 @@ def main():
     # change back
     os.chdir(osu_song_path)
 
-
     print("Backup your song folder before using this script...")
     contains_anime_tag = []
     # walk through directories and list the files names
@@ -111,15 +110,10 @@ def main():
             for i, file in enumerate(os.listdir(dirname)):
                 filename, extension = splitext(file)
                 if is_background(osu_song_path + '\\' + dirname + '\\' + file):
-                    if extension == ".jpg":
-                        # delete_original(osu_path + '\\' + dirname + '\\' + filename)
-                        replace_file(get_background(nature_folder, ".jpg"),
-                                     osu_song_path + '\\' + dirname + '\\' + file)  # makes sure is jpg
-                    elif extension == ".png":
-                        replace_file(get_background(nature_folder, ".png"),
-                                     osu_song_path + '\\' + dirname + '\\' + file)  # makes sure is png
-                    
+                    # delete_original(osu_path + '\\' + dirname + '\\' + filename)
+                    replace_file(get_background(nature_folder, extension), osu_song_path + '\\' + dirname + '\\' + file)
 
+                
 # check if song is tagged as anime
 # tv, anime, japanese
 # see if beatmap backgrounds is supposed to be a png from the .osu file.

@@ -27,6 +27,7 @@ os.chdir(osu_song_path)
 def get_background(folder, ext):
     return folder + str(random.randrange(num_nature)) + ext
     # todo get number of files in folder
+    # todo make this sequential instead of random\
 
 
 def replace_file(src, dest):
@@ -74,14 +75,14 @@ def change_preferences(config_file, seasonal, song_skin, turn_off_thumbnails):
     with open(config_file, 'r') as file:
         # read a list of lines into data
         data = file.readlines()
-    if seasonal:
-        # deletes final characters and changes setting
-        data[seasonal_backgrounds_line] = data[seasonal_backgrounds_line][:-6] + "Never\n"
-    if song_skin:
-        data[beatmap_skin_line] = data[beatmap_skin_line][:-2] + "1\n"
-    if turn_off_thumbnails:
-        data[thumbnail_line] = data[thumbnail_line][:-2] + "1\n"
+    for i in range(len(data)):
 
+        if seasonal and "Seasonal" in data[i]:
+            data[i] = data[i][:21] + " Never\n"
+        if song_skin and "IgnoreBeatmapSkins" in data[i]:
+            data[i] = data[i][:-2] + "1\n"
+        if turn_off_thumbnails and "SongSelectThumbnails" in data[i]:
+            data[i] = data[i][:-2] + "0\n"
     # and write everything back
     with open(config_file, 'w') as file:
         file.writelines(data)
@@ -91,7 +92,7 @@ def main():
     seasonal = False
     song_skin = False
     turn_off_thumnails = False
-    change_preferences_test = str(input("Do you want to change preferences? Yes/No"))
+    change_preferences_test = str(input("Do you want to change preferences? Yes/No: "))
 
     # go up a directory to change file in root colder
     os.chdir('..')
@@ -113,7 +114,7 @@ def main():
                     # delete_original(osu_path + '\\' + dirname + '\\' + filename)
                     replace_file(get_background(nature_folder, extension), osu_song_path + '\\' + dirname + '\\' + file)
 
-                
+
 # check if song is tagged as anime
 # tv, anime, japanese
 # see if beatmap backgrounds is supposed to be a png from the .osu file.

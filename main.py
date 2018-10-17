@@ -7,16 +7,12 @@ import shutil
 import random
 from PIL import Image
 from os.path import splitext
-import fileinput
-import sys
+
 
 project_path = os.getcwd()
 nature_folder = project_path + "\\res\\images\\nature\\"
 
 num_nature = 15
-seasonal_backgrounds_line = 123
-beatmap_skin_line = 58
-thumbnail_line = 110
 
 username = str(os.getlogin())
 # default osu installation path
@@ -47,7 +43,7 @@ def is_background(image_path):
     if image_path[-4:] == ".jpg" or image_path[-4:] == ".png":
         with Image.open(image_path) as img:
             width, height = img.size
-            if width * height >= 480000:  # 800 * 600 pixels
+            if width * height >= 20000:  # 500 * 400 pixels
                 return True
             else:
                 return False
@@ -108,9 +104,11 @@ def main():
     # walk through directories and list the files names
     for dirname in os.listdir("."):
         if os.path.isdir(dirname):
+            print(dirname)
             for i, file in enumerate(os.listdir(dirname)):
                 filename, extension = splitext(file)
                 if is_background(osu_song_path + '\\' + dirname + '\\' + file):
+                    print(file)
                     # delete_original(osu_path + '\\' + dirname + '\\' + filename)
                     replace_file(get_background(nature_folder, extension), osu_song_path + '\\' + dirname + '\\' + file)
 

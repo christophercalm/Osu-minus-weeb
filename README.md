@@ -4,18 +4,25 @@ Replaces stock backgrounds from Osu! with different ones and creates sane defaul
 
 # Requirements:
 
-Osu!,
-Windows,
-Python >= 3.0,
-Pip,
-Git,
+Osu!
+
+Windows
+
+Python >= 3.0
+
+Pip
+
+Git
 
 
 ##
-To install requirements:,
-Download Python [python.org](https://www.python.org/downloads/),
-Download Git for windows [Git](https://git-scm.com/download/win),
-Download Osu! [Osu!](https://osu.ppy.sh/home/download),
+To install requirements:
+
+Download Python [python.org](https://www.python.org/downloads/)
+
+Download Git for windows [Git](https://git-scm.com/download/win)
+
+Download Osu! [Osu!](https://osu.ppy.sh/home/download)
 
 ```
 pip install click

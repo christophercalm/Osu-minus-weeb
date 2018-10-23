@@ -15,8 +15,7 @@ Pip
 Git
 
 
-##
-To install requirements:
+### To install requirements:
 
 Download Python [python.org](https://www.python.org/downloads/)
 
@@ -29,12 +28,12 @@ pip install click
 pip install pillow
 ```
 
-## To download:
+### To download:
 ```
 git clone https://github.com/christophercalm/Osu-minus-weeb.git
 ```
 
-## To run:
+### To run:
 ```
 cd Osu-minus-weeb
 python osu-minus-weeb.py --help

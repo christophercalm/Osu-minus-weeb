@@ -2,7 +2,7 @@
 Replaces stock backgrounds from Osu! with different ones and creates sane defaults for config
 
 
-# Requirements:
+## Requirements:
 
 Osu!
 

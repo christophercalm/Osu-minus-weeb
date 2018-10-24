@@ -1,5 +1,5 @@
 # Osu-minus-weeb
-Replaces stock backgrounds from Osu! with different ones and creates sane defaults for config
+Osu! is a great game but some of the default backgrounds and settings can be a little too much for players who are not big fans of anime. This program replaces stock backgrounds from Osu! with different ones and creates sane defaults for config.
 
 
 ## Requirements:

@@ -5,6 +5,8 @@ You can use it from the source itself or download a folder that includes an exec
 
 [Google Drive](https://drive.google.com/uc?id=1oKNbIJmvegb7_mAhe4f6KtaA9hfuvFE9&export=download)
 
+This is quite a large file as it includes high resolution images and a portable copy of Python and supporting libraries.
+
 
 ## Requirements:
 

@@ -1,6 +1,10 @@
 # Osu-minus-weeb
 Osu! is a great game but some of the default backgrounds and settings can be a little too much for players who are not big fans of anime. This program replaces stock backgrounds from Osu! with different ones and creates sane defaults for config.
 
+You can use it from the source itself or download a folder that includes an executable that includes all necessary libraries at
+
+[Google Drive](https://drive.google.com/file/d/1oKNbIJmvegb7_mAhe4f6KtaA9hfuvFE9/view?usp=sharing)
+
 
 ## Requirements:
 

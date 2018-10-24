@@ -3,7 +3,7 @@ Osu! is a great game but some of the default backgrounds and settings can be a l
 
 You can use it from the source itself or download a folder that includes an executable that includes all necessary libraries at
 
-[Google Drive](https://drive.google.com/file/d/1oKNbIJmvegb7_mAhe4f6KtaA9hfuvFE9/view?usp=sharing)
+[Google Drive](https://drive.google.com/uc?id=1oKNbIJmvegb7_mAhe4f6KtaA9hfuvFE9&export=download)
 
 
 ## Requirements:

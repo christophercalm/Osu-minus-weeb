@@ -25,7 +25,7 @@ Git
 
 Download Python [python.org](https://www.python.org/downloads/)
 
-Download Git for windows [Git](https://git-scm.com/download/win)
+Download Git for Windows [Git](https://git-scm.com/download/win)
 
 Download Osu! [Osu!](https://osu.ppy.sh/home/download)
 
